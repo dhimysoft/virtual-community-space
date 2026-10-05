@@ -12,3 +12,7 @@ const config = {
 }
 
 export const pool = new pg.Pool(config)
+
+// Keep this app's tables in their own schema so they never collide with
+// (or drop) tables from other apps sharing the same database.
+pool.on('connect', client => client.query('SET search_path TO vcs'))

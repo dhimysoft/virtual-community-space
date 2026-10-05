@@ -24,6 +24,7 @@ const events = [
 ]
 
 async function reset() {
+  await pool.query('CREATE SCHEMA IF NOT EXISTS vcs')
   await pool.query('DROP TABLE IF EXISTS events; DROP TABLE IF EXISTS locations;')
   await pool.query(`
     CREATE TABLE locations (
