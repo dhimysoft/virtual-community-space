@@ -10,7 +10,7 @@ Time spent: **2** hours
 
 - [x] **The web app uses React to display data from the API**
 - [x] **The web app is connected to a PostgreSQL database, with an appropriately structured `events` table**
-  - [x] **The web app is connected to a Render PostgreSQL database**
+  - [ ] **The web app is connected to a Render PostgreSQL database**
   - [x] **The database contains an appropriately structured `events` table**
 - [x] **The web app displays a title**
 - [x] **Website includes a visual interface that allows users to select a location they would like to view**
@@ -32,6 +32,10 @@ Time spent: **2** hours
 ## Database
 
 `locations` (id, name, neighborhood, image, description, x, y) and `events` (id, location_id → locations.id, title, description, event_date).
+
+## Render database status
+
+The app's tables live in a `vcs` schema so they can share a database safely. As of submission the Render connection was not working (the host accepts TCP but Postgres drops the connection), so the "connected to a Render PostgreSQL database" box below is **not** checked. To finish: create a Render Postgres, put its Connections values in `server/.env`, then run `npm run reset`.
 
 ## Running it locally
 
