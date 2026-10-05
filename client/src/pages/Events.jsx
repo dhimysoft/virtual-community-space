@@ -25,12 +25,13 @@ export default function Events() {
   return (
     <section>
       <h1 className="heading">All events</h1>
-      <label className="filter">Filter by location:{' '}
-        <select value={filter} onChange={e => setFilter(e.target.value)}>
-          <option value="all">All locations</option>
-          {locations.map(l => <option key={l.id} value={l.id}>{l.name}</option>)}
-        </select>
-      </label>
+      <div className="chips" role="group" aria-label="Filter by location">
+        <button className={`chip ${filter === 'all' ? 'on' : ''}`} onClick={() => setFilter('all')}>All venues</button>
+        {locations.map(l => (
+          <button key={l.id} className={`chip ${filter === String(l.id) ? 'on' : ''}`}
+            onClick={() => setFilter(String(l.id))}>{l.name}</button>
+        ))}
+      </div>
       {error && <p className="msg">{error}</p>}
       <div className="grid">{shown.map(e => <EventCard key={e.id} event={e} showLocation />)}</div>
     </section>
