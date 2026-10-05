@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { getLocationById, getEventsByLocation } from '../services/api.js'
+import { getLocationById } from '../services/LocationsAPI.jsx'
+import { getEventsByLocation } from '../services/EventsAPI.jsx'
 import EventCard from './EventCard.jsx'
 
 export default function LocationEvents() {

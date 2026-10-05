@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
-import { getAllLocations } from '../services/api.js'
+import { getAllLocations } from '../services/LocationsAPI.jsx'
 
 // City blocks laid out between the streets; a few are parks
 const XS = [3, 27, 43, 63, 81], WS = [20, 13, 17, 15, 16]

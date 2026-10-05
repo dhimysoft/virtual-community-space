@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import { getAllEvents, getAllLocations } from '../services/api.js'
+import { getAllEvents } from '../services/EventsAPI.jsx'
+import { getAllLocations } from '../services/LocationsAPI.jsx'
 import EventCard from './EventCard.jsx'
 
 export default function Events() {
