@@ -4,7 +4,7 @@ Submitted by: **Dhimy Jean**
 
 About this web app: **Neon District is a virtual community space for live music. Users click one of four venues on an interactive map and see every event (past and upcoming) at that venue, with a live countdown.**
 
-Time spent: **2** hours
+Time spent: **5** hours
 
 ## Required Features
 
