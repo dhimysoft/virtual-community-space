@@ -26,8 +26,9 @@ Time spent: **2** hours
 
 ## Video Walkthrough
 
-<!-- TODO: record a GIF of the walkthrough and save it as walkthrough.gif -->
 <img src='walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with headless Google Chrome screenshots stitched together with Python (Pillow) — see `scripts/make-walkthrough.py`
 
 ## Database
 
